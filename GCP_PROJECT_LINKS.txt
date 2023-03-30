@@ -1,0 +1,17 @@
+# Service Account
+test123@abb-gl-pf-hton19-9aag037007.iam.gserviceaccount.com
+
+# Container URL
+https://gcp-zg3i4ew2jq-uc.a.run.app 
+
+C:\Users\INVIMOU\Downloads\abb-gl-pf-hton19-9aag037007-17554c7dbf57.json
+
+# Bikes
+gcloud auth activate-service-account bicycle-service-account@tonal-history-154018.iam.gserviceaccount.com --key-file=../tonal-history-154018-e62a79baf90f.json
+
+# Turbines
+gcloud auth activate-service-account test123@abb-gl-pf-hton19-9aag037007.iam.gserviceaccount.com --key-file=../abb-gl-pf-hton19-9aag037007-17554c7dbf57.json
+
+export GOOGLE_APPLICATION_CREDENTIALS='../abb-gl-pf-hton19-9aag037007-17554c7dbf57.json'
+
+dvc remote modify --local bikes credentialpath '../tonal-history-154018-e62a79baf90f.json'

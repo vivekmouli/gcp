@@ -1,0 +1,4 @@
+[core]
+    remote = turbines
+['remote "turbines"']
+    url = gs://gtrawdata
